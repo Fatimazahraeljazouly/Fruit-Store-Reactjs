@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .primary-btn{
+        @apply bg-primary
+/*          hover:bg-secondary
+ */          text-black font-semibold 
+          py-3 px-6 rounded-xl 
+          shadow-[0px_10px_14px_-7px_#de0029]
+/*           hover:shadow-[0px_10px_14px_-7px_#fb923c]
+ */          hover:!scale-75 duration-300
+    }
+ 
+}
+
+@layer components {
+    .secondary-btn{
+        @apply 
+        text-white hover:bg-green-700 
+        bg-green-600
+         font-semibold 
+          py-3 px-6 rounded-xl 
+          shadow-[0px_10px_14px_-7px_#228B22]
+       hover:!scale-90 duration-300
+    }
+}
+@layer utilities {
+    .drop-shadow{
+        filter:drop-shadow(-6px 8px 15px rgba(0, 0, 0, 0.2));
+    }
+}
