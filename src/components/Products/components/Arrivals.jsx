@@ -6,6 +6,7 @@ import img3 from '../../../assets/fruits/graps.png'
 import img4 from '../../../assets/fruits/mango.png'
 import {motion} from 'framer-motion'
 import { FadeLeft } from '../../../utility/animation'
+
 const listArrivals=[
     {
         id:1,
