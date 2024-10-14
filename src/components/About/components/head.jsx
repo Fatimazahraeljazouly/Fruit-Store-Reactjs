@@ -4,28 +4,28 @@ import { FadeUp,FadeRight } from '../../../utility/animation';
 
 const head = () => {
   return (
-    <section className='h-[400px] '>
-    <div className=' bg-yellow-200  container grid grid-cols-1 md:grid-cols-2 
+    <section className=' '>
+    <div className='  container  bg-yellow-200  grid grid-cols-1 md:grid-cols-2 
           relative gap-10 lg:gap-[200px] mt-14 pb-8 '>
           {/* Description */}
-          <div className='flex flex-col justify-around  
+          <div className='flex flex-col   md:justify-start justify-center items-center text-center  
                   py-14 md:py-0 relative z-10 lg:max-w-[500px]
                   lg:justify-center'>
-              <div className='text-clip md:text-left  space-y-6
+              <div className='flex flex-col md:justify-start justify-center text-clip md:text-left  space-y-6
                       lg:max-w-[400px]  '>
                       <motion.h1 
                       variants={FadeUp(0.4)}
                       initial="hidden"
                       animate="visible"
                       className='font-bold text-5xl text-green-600 
-                          text-start font-averia pt-10 lg:w-[500px] '>
+                          md:text-start text-center font-averia pt-10  lg:w-[500px]  '>
                           About Us
                       </motion.h1>
                       <motion.p 
                       variants={FadeRight(0.6)}
                       initial='hidden'
                       animate='visible'
-                      className='font-semibold text- text-start
+                      className='md:text-start font-semibold 
                           w-[350px] lg:w-[500px] mt-4'>
                             At Fruit Store, we deliver fresh, high-quality fruits
                 straight from the farm to your door. We carefully select the best 
@@ -38,7 +38,7 @@ const head = () => {
               </div>
           </div>
           {/* The Image */}
-          <div className='flex md:justify-center items-center pt-7 '>
+          <div className='flex md:justify-start justify-center items-center pt-5 '>
                <motion.img
                initial={{opacity:0,x:200}}
                animate={{opacity:1,x:0}}
